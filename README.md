@@ -26,8 +26,9 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
+-Desktop design
 ![Desktop design](image-1.png)
+-Mobile design
 ![Mobile design](image.png)
 
 ### Links
