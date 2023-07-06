@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Arckus1256/Results-Summary-Component.git
-- Live Site URL: https://github.com/Arckus1256/Arckus1256.github.io
+- Live Site URL: https://arckus1256.github.io
 
 ## My process
 
