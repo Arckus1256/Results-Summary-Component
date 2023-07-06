@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="result">
+        <h3 id="title-result">Your Result</h3>
+        <div class="score-result">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p id="text-result">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="summary">
+        <h2 id="title-summary">Summary</h2>
+        <div class="stat" id="reaction">
+          <div class="icon-name-stat">
+            <img
+              src="/assets/images/icon-reaction.svg"
+              alt="icon"
+              class="icon-stat"
+            />
+            <p class="name-stat bolder">Reaction</p>
+          </div>
+          <p class="score-stat">
+            <span class="bolder">80</span> <span class="light">/ 100</span>
+          </p>
+        </div>
+        <div class="stat" id="memory">
+          <div class="icon-name-stat">
+            <img
+              src="/assets/images/icon-memory.svg"
+              alt="icon"
+              class="icon-stat"
+            />
+            <p class="name-stat bolder">Memory</p>
+          </div>
+          <p class="score-stat">
+            <span class="bolder">92</span> <span class="light">/ 100</span>
+          </p>
+        </div>
+        <div class="stat" id="verbal">
+          <div class="icon-name-stat">
+            <img
+              src="/assets/images/icon-verbal.svg"
+              alt="icon"
+              class="icon-stat"
+            />
+            <p class="name-stat bolder">Verbal</p>
+          </div>
+          <p class="score-stat">
+            <span class="bolder">61</span> <span class="light">/ 100</span>
+          </p>
+        </div>
+        <div class="stat" id="visual">
+          <div class="icon-name-stat">
+            <img
+              src="/assets/images/icon-visual.svg"
+              alt="icon"
+              class="icon-stat"
+            />
+            <p class="name-stat bolder">Visual</p>
+          </div>
+          <p class="score-stat">
+            <span class="bolder">72</span><span class="light"> / 100</span>
+          </p>
+        </div>
+        <button class="btn-summary">Continue</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Arckus</a>.
+    </div>
+  </body>
+</html>

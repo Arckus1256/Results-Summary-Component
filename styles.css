@@ -1,0 +1,290 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  height: 100vh;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+
+p {
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  text-align: center;
+  width: 750px;
+  height: 500px;
+  z-index: 0;
+}
+
+/*Result styles*/
+.result {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  color: var(--white);
+  text-align: center;
+  border-radius: 25px;
+  width: 350px;
+  height: 500px;
+  z-index: 1;
+}
+
+#title-result {
+  font-size: 1.1rem;
+  color: hsla(0, 0%, 100%, 65%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.score-result {
+  margin: auto;
+  height: 175px;
+  width: 175px;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(
+    to bottom,
+    hsla(241, 72%, 52%, 1),
+    hsla(241, 72%, 46%, 0.1)
+  );
+}
+
+.score-result h1 {
+  margin: 0;
+  padding-top: 35px;
+  font-size: 3.2rem;
+}
+
+.score-result p {
+  margin: 0;
+  font-size: 16px;
+  color: hsla(0, 0%, 100%, 45%);
+}
+
+#text-result {
+  margin: auto;
+  text-align: center;
+  width: 250px;
+  height: 100px;
+  color: hsla(0, 0%, 100%, 70%);
+}
+
+/*Summary Styles*/
+.summary {
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 25px;
+  width: 450px;
+  height: 500px;
+  padding-left: 50px;
+  margin-left: -50px;
+  border: none;
+  box-shadow: 1px 0 10px 0px hsla(241, 100%, 89%, 0.4);
+  z-index: 0;
+}
+
+.icon-stat {
+  width: 20px;
+  height: 20px;
+  margin-top: 16px;
+  padding-right: 10px;
+}
+
+.icon-name-stat {
+  display: flex;
+  width: 100px;
+  height: 50px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 55px;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.btn-summary {
+  width: 350px;
+  height: 55px;
+  margin-top: 30px;
+  background-color: hsl(224, 30%, 27%);
+  color: var(--white);
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.light {
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+#title-summary {
+  font-size: 1.1rem;
+  margin-right: 245px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#reaction .name-stat {
+  color: hsl(0, 100%, 67%);
+}
+
+#memory .name-stat {
+  color: hsl(39, 100%, 56%);
+}
+
+#verbal .name-stat {
+  color: hsl(166, 100%, 37%);
+}
+
+#visual .name-stat {
+  color: hsl(234, 85%, 45%);
+}
+.stat#reaction {
+  background-color: hsla(0, 100%, 67%, 6%);
+}
+
+.stat#memory {
+  background-color: hsla(39, 100%, 56%, 6%);
+}
+
+.stat#verbal {
+  background-color: hsla(166, 100%, 37%, 6%);
+}
+
+.stat#visual {
+  background-color: hsla(234, 85%, 45%, 6%);
+}
+
+/*attribution styles*/
+
+.attribution {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  color: hsl(224, 30%, 27%);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(166, 100%, 37%);
+}
+
+
+/*Mobile styles*/
+@media screen and (max-width: 375px) {
+
+  body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 375px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+  }
+
+  /*Result mobile styles*/
+  
+  #title-result {
+    font-size: 1rem;
+  }
+
+  .result {
+    width: inherit;
+    height: 400px;
+    margin-top: -20px;
+    padding-top: 20px;
+  }
+
+  .score-result {
+    height: 150px;
+    width: 150px;
+  }
+
+  .score-result h1 {
+    margin: 0;
+    padding-top: 25px;
+    font-size: 3rem;
+  }
+  
+  .score-result p {
+    margin: 0;
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, 50%);
+  }
+  
+  .result h2 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  #text-result {
+    margin: auto;
+    text-align: center;
+    width: 260px;
+    height: 100px;
+    color: hsla(0, 0%, 100%, 70%);
+  }
+
+  /*Summary mobile styles*/
+  .summary {
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 25px;
+    width: 100vw;
+    height: 100%;
+    margin-top: -50px;
+  }
+
+  #title-summary {
+    font-size: 0.9rem;
+    margin-right: 235px;
+    margin-top: 75px;
+    margin-bottom: 25px;
+  }
+
+  .stat {
+    width: 275px;
+    height: 55px;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+    padding: 0 20px;
+  }
+
+  .btn-summary {
+    width: 320px;
+    height: 55px;
+    margin-top: 10px;
+  }
+}
